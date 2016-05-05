@@ -1,0 +1,25 @@
+.fadable {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.fadable.fadable--faded {
+  opacity: 0;
+}
+
+
+
+
+/* ========================================================================= */
+/* Everything below is unimportant – used only by the demo and not necessary */
+/* to make Fadable work.                                                     */
+/* ========================================================================= */
+body {font-family:sans-serif;}
+h1, h2 {color:#666; margin:2rem;}
+div {background-color:#beeb9f; background-image:linear-gradient(to bottom, #beeb9f, #79bd8f); border-radius:3px; margin:2rem; overflow:auto; padding:2rem;}
+p {line-height:1.4; margin-top:0;}
+p:last-child {margin-bottom:0;}
+img {border:5px solid #000; border-radius:3px;}
+.pull-left {float:left; margin:0 2rem 1rem 0;}
+.pull-right {float:right; margin:0 0 1rem 2rem;}
