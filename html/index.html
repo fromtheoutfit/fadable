@@ -4,99 +4,127 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
-    <title>Fadable: fade-in elements once they’re in view</title>
+    <title>Fadable: fade-in elements once they’re scrolled into view</title>
   </head>
   <body>
-    <h1>Fadable: fade-in elements once they're in view</h1>
-    <h2>Scroll a bit, and watch the bottom of the viewport…</h2>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>In the first place, the enormous cutting tackles, among other ponderous things comprising a cluster of blocks generally painted green, and which no single man can possibly lift&mdash;this vast bunch of grapes was swayed up to the main-top and firmly lashed to the lower mast-head, the strongest point anywhere above a ship's deck. The end of the hawser-like rope winding through these intricacies, was then conducted to the windlass, and the huge lower block of the tackles was swung over the whale; to this block the great blubber hook, weighing some one hundred pounds, was attached. And now suspended in stages over the side, Starbuck and Stubb, the mates, armed with their long spades, began cutting a hole in the body for the insertion of the hook just above the nearest of the two side-fins. This done, a broad, semicircular line is cut round the hole, the hook is inserted, and the main body of the crew striking up a wild chorus, now commence heaving in one dense crowd at the windlass. When instantly, the entire ship careens over on her side; every bolt in her starts like the nail-heads of an old house in frosty weather; she trembles, quivers, and nods her frighted mast-heads to the sky. More and more she leans over to the whale, while every gasping heave of the windlass is answered by a helping heave from the billows; till at last, a swift, startling snap is heard; with a great swash the ship rolls upwards and backwards from the whale, and the triumphant tackle rises into sight dragging after it the disengaged semicircular end of the first strip of blubber.
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Fadable</h1>
+        <p>Fadable is a <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">tiny bit of JavaScript</a> that finds elements with a class of <code>fadable</code>, sets their opacity to <code>0</code> if they’re below the bottom of the browser window, then fades them in as they move into view.</p>
+        <p><a href="https://github.com/fromtheoutfit/fadable" class="button">View on GitHub</a></p>
+        <p><small>Made by the folks at <a href="https://fromtheoutfit.com/">The Outfit</a>.</small></p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now as the blubber envelopes the whale precisely as the rind does an orange, so is it stripped off from the body precisely as an orange is sometimes stripped by spiralizing it. For the strain constantly kept up by the windlass continually keeps the whale rolling over and over in the water, and as the blubber in one strip uniformly peels off along the line called the "scarf," simultaneously cut by the spades of Starbuck and Stubb, the mates; and just as fast as it is thus peeled off, and indeed by that very act itself, it is all the time being hoisted higher and higher aloft till its upper end grazes the main-top; the men at the windlass then cease heaving, and for a moment or two the prodigious blood-dripping mass sways to and fro as if let down from the sky, and every one present must take good heed to dodge it when it swings, else it may box his ears and pitch him headlong overboard.</p>
-      <p>One of the attending harpooneers now advances with a long, keen weapon called a boarding-sword, and watching his chance he dexterously slices out a considerable hole in the lower part of the swaying mass. Into this hole, the end of the second alternating great tackle is then hooked so as to retain a hold upon the blubber, in order to prepare for what follows. Whereupon, this accomplished swordsman, warning all hands to stand off, once more makes a scientific dash at the mass, and with a few sidelong, desperate, lunging slicings, severs it completely in twain; so that while the short lower part is still fast, the long upper strip, called a blanket-piece, swings clear, and is all ready for lowering. The heavers forward now resume their song, and while the one tackle is peeling and hoisting a second strip from the whale, the other is slowly slackened away, and down goes the first strip through the main hatchway right beneath, into an unfurnished parlor called the blubber-room. Into this twilight apartment sundry nimble hands keep coiling away the long blanket-piece as if it were a great live mass of plaited serpents. And thus the work proceeds; the two tackles hoisting and lowering simultaneously; both whale and windlass heaving, the heavers singing, the blubber-room gentlemen coiling, the mates scarfing, the ship straining, and all hands swearing occasionally, by way of assuaging the general friction.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>This Box Probably Didn’t Fade In</h1>
+        <p>…and that’s OK! If the top of a <code>fadable</code> element is visible on page-load, Fadable won’t hide it.</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>I have given no small attention to that not unvexed subject, the skin of the whale. I have had controversies about it with experienced whalemen afloat, and learned naturalists ashore. My original opinion remains unchanged; but it is only an opinion.</p>
-      <p>The question is, what and where is the skin of the whale? Already you know what his blubber is. That blubber is something of the consistence of firm, close-grained beef, but tougher, more elastic and compact, and ranges from eight or ten to twelve and fifteen inches in thickness.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>This Box Might Have Faded In</h1>
+        <p>It really depends on how tall your browser is.</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now, however preposterous it may at first seem to talk of any creature's skin as being of that sort of consistence and thickness, yet in point of fact these are no arguments against such a presumption; because you cannot raise any other dense enveloping layer from the whale's body but that same blubber; and the outermost enveloping layer of any animal, if reasonably dense, what can that be but the skin? True, from the unmarred dead body of the whale, you may scrape off with your hand an infinitely thin, transparent substance, somewhat resembling the thinnest shreds of isinglass, only it is almost as flexible and soft as satin; that is, previous to being dried, when it not only contracts and thickens, but becomes rather hard and brittle. I have several such dried bits, which I use for marks in my whale-books. It is transparent, as I said before; and being laid upon the printed page, I have sometimes pleased myself with fancying it exerted a magnifying influence. At any rate, it is pleasant to read about whales through their own spectacles, as you may say. But what I am driving at here is this. That same infinitely thin, isinglass substance, which, I admit, invests the entire body of the whale, is not so much to be regarded as the skin of the creature, as the skin of the skin, so to speak; for it were simply ridiculous to say, that the proper skin of the tremendous whale is thinner and more tender than the skin of a new-born child. But no more of this.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>This Box Probably Faded In</h1>
+        <p>You get the gist.</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>In the first place, the enormous cutting tackles, among other ponderous things comprising a cluster of blocks generally painted green, and which no single man can possibly lift&mdash;this vast bunch of grapes was swayed up to the main-top and firmly lashed to the lower mast-head, the strongest point anywhere above a ship's deck. The end of the hawser-like rope winding through these intricacies, was then conducted to the windlass, and the huge lower block of the tackles was swung over the whale; to this block the great blubber hook, weighing some one hundred pounds, was attached. And now suspended in stages over the side, Starbuck and Stubb, the mates, armed with their long spades, began cutting a hole in the body for the insertion of the hook just above the nearest of the two side-fins. This done, a broad, semicircular line is cut round the hole, the hook is inserted, and the main body of the crew striking up a wild chorus, now commence heaving in one dense crowd at the windlass. When instantly, the entire ship careens over on her side; every bolt in her starts like the nail-heads of an old house in frosty weather; she trembles, quivers, and nods her frighted mast-heads to the sky. More and more she leans over to the whale, while every gasping heave of the windlass is answered by a helping heave from the billows; till at last, a swift, startling snap is heard; with a great swash the ship rolls upwards and backwards from the whale, and the triumphant tackle rises into sight dragging after it the disengaged semicircular end of the first strip of blubber.
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Anyway, Here’s How You Implement Fadable</h1>
+        <p><em>…keep going…</em></p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now as the blubber envelopes the whale precisely as the rind does an orange, so is it stripped off from the body precisely as an orange is sometimes stripped by spiralizing it. For the strain constantly kept up by the windlass continually keeps the whale rolling over and over in the water, and as the blubber in one strip uniformly peels off along the line called the "scarf," simultaneously cut by the spades of Starbuck and Stubb, the mates; and just as fast as it is thus peeled off, and indeed by that very act itself, it is all the time being hoisted higher and higher aloft till its upper end grazes the main-top; the men at the windlass then cease heaving, and for a moment or two the prodigious blood-dripping mass sways to and fro as if let down from the sky, and every one present must take good heed to dodge it when it swings, else it may box his ears and pitch him headlong overboard.</p>
-      <p>One of the attending harpooneers now advances with a long, keen weapon called a boarding-sword, and watching his chance he dexterously slices out a considerable hole in the lower part of the swaying mass. Into this hole, the end of the second alternating great tackle is then hooked so as to retain a hold upon the blubber, in order to prepare for what follows. Whereupon, this accomplished swordsman, warning all hands to stand off, once more makes a scientific dash at the mass, and with a few sidelong, desperate, lunging slicings, severs it completely in twain; so that while the short lower part is still fast, the long upper strip, called a blanket-piece, swings clear, and is all ready for lowering. The heavers forward now resume their song, and while the one tackle is peeling and hoisting a second strip from the whale, the other is slowly slackened away, and down goes the first strip through the main hatchway right beneath, into an unfurnished parlor called the blubber-room. Into this twilight apartment sundry nimble hands keep coiling away the long blanket-piece as if it were a great live mass of plaited serpents. And thus the work proceeds; the two tackles hoisting and lowering simultaneously; both whale and windlass heaving, the heavers singing, the blubber-room gentlemen coiling, the mates scarfing, the ship straining, and all hands swearing occasionally, by way of assuaging the general friction.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Step #1: Add Classes</h1>
+        <p>Add a class of <code>.fadable</code> to any element you want to fade-in.</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>I have given no small attention to that not unvexed subject, the skin of the whale. I have had controversies about it with experienced whalemen afloat, and learned naturalists ashore. My original opinion remains unchanged; but it is only an opinion.</p>
-      <p>The question is, what and where is the skin of the whale? Already you know what his blubber is. That blubber is something of the consistence of firm, close-grained beef, but tougher, more elastic and compact, and ranges from eight or ten to twelve and fifteen inches in thickness.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Step #2: Grab the CSS</h1>
+        <p>Copy and paste this into your CSS:</p>
+        <pre><code>.fadable {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now, however preposterous it may at first seem to talk of any creature's skin as being of that sort of consistence and thickness, yet in point of fact these are no arguments against such a presumption; because you cannot raise any other dense enveloping layer from the whale's body but that same blubber; and the outermost enveloping layer of any animal, if reasonably dense, what can that be but the skin? True, from the unmarred dead body of the whale, you may scrape off with your hand an infinitely thin, transparent substance, somewhat resembling the thinnest shreds of isinglass, only it is almost as flexible and soft as satin; that is, previous to being dried, when it not only contracts and thickens, but becomes rather hard and brittle. I have several such dried bits, which I use for marks in my whale-books. It is transparent, as I said before; and being laid upon the printed page, I have sometimes pleased myself with fancying it exerted a magnifying influence. At any rate, it is pleasant to read about whales through their own spectacles, as you may say. But what I am driving at here is this. That same infinitely thin, isinglass substance, which, I admit, invests the entire body of the whale, is not so much to be regarded as the skin of the creature, as the skin of the skin, so to speak; for it were simply ridiculous to say, that the proper skin of the tremendous whale is thinner and more tender than the skin of a new-born child. But no more of this.</p>
-    </div>
+.fadable.fadable--invisible {
+  opacity: 0;
+}</code></pre>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>In the first place, the enormous cutting tackles, among other ponderous things comprising a cluster of blocks generally painted green, and which no single man can possibly lift&mdash;this vast bunch of grapes was swayed up to the main-top and firmly lashed to the lower mast-head, the strongest point anywhere above a ship's deck. The end of the hawser-like rope winding through these intricacies, was then conducted to the windlass, and the huge lower block of the tackles was swung over the whale; to this block the great blubber hook, weighing some one hundred pounds, was attached. And now suspended in stages over the side, Starbuck and Stubb, the mates, armed with their long spades, began cutting a hole in the body for the insertion of the hook just above the nearest of the two side-fins. This done, a broad, semicircular line is cut round the hole, the hook is inserted, and the main body of the crew striking up a wild chorus, now commence heaving in one dense crowd at the windlass. When instantly, the entire ship careens over on her side; every bolt in her starts like the nail-heads of an old house in frosty weather; she trembles, quivers, and nods her frighted mast-heads to the sky. More and more she leans over to the whale, while every gasping heave of the windlass is answered by a helping heave from the billows; till at last, a swift, startling snap is heard; with a great swash the ship rolls upwards and backwards from the whale, and the triumphant tackle rises into sight dragging after it the disengaged semicircular end of the first strip of blubber.
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Step #3: Grab the JavaScript</h1>
+        <p>Get the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and import it at the bottom of your web page(s), like this:</p>
+        <p><code>&lt;script src="/path/to/fadable.js"&gt;&lt;/script&gt;</code>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now as the blubber envelopes the whale precisely as the rind does an orange, so is it stripped off from the body precisely as an orange is sometimes stripped by spiralizing it. For the strain constantly kept up by the windlass continually keeps the whale rolling over and over in the water, and as the blubber in one strip uniformly peels off along the line called the "scarf," simultaneously cut by the spades of Starbuck and Stubb, the mates; and just as fast as it is thus peeled off, and indeed by that very act itself, it is all the time being hoisted higher and higher aloft till its upper end grazes the main-top; the men at the windlass then cease heaving, and for a moment or two the prodigious blood-dripping mass sways to and fro as if let down from the sky, and every one present must take good heed to dodge it when it swings, else it may box his ears and pitch him headlong overboard.</p>
-      <p>One of the attending harpooneers now advances with a long, keen weapon called a boarding-sword, and watching his chance he dexterously slices out a considerable hole in the lower part of the swaying mass. Into this hole, the end of the second alternating great tackle is then hooked so as to retain a hold upon the blubber, in order to prepare for what follows. Whereupon, this accomplished swordsman, warning all hands to stand off, once more makes a scientific dash at the mass, and with a few sidelong, desperate, lunging slicings, severs it completely in twain; so that while the short lower part is still fast, the long upper strip, called a blanket-piece, swings clear, and is all ready for lowering. The heavers forward now resume their song, and while the one tackle is peeling and hoisting a second strip from the whale, the other is slowly slackened away, and down goes the first strip through the main hatchway right beneath, into an unfurnished parlor called the blubber-room. Into this twilight apartment sundry nimble hands keep coiling away the long blanket-piece as if it were a great live mass of plaited serpents. And thus the work proceeds; the two tackles hoisting and lowering simultaneously; both whale and windlass heaving, the heavers singing, the blubber-room gentlemen coiling, the mates scarfing, the ship straining, and all hands swearing occasionally, by way of assuaging the general friction.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>That’s It</h1>
+        <p>Check out the source of this page to see how we’re doing it.</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>I have given no small attention to that not unvexed subject, the skin of the whale. I have had controversies about it with experienced whalemen afloat, and learned naturalists ashore. My original opinion remains unchanged; but it is only an opinion.</p>
-      <p>The question is, what and where is the skin of the whale? Already you know what his blubber is. That blubber is something of the consistence of firm, close-grained beef, but tougher, more elastic and compact, and ranges from eight or ten to twelve and fifteen inches in thickness.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Options / Adjustments</h1>
+        <p><strong>Fade-in Point:</strong> to change the point at which <code>fadable</code> elements start to fade in after they pass the browser’s bottom edge, open <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">fadable.js</a> and adjust the value assigned to <code>fadeDistance</code>. The default is <code>200</code> pixels.</p>
+        <p><strong>Fade-in Speed:</strong> to change the speed at which <code>fadable</code> elements fade-in, find <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/styles.css#L4">the <code>transition-duration</code> property</a> in the <code>.fadable</code> CSS and adjust it as you see fit. The default is <code>500ms</code> (milliseconds).</p>
+      </div>
+    </section>
 
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now, however preposterous it may at first seem to talk of any creature's skin as being of that sort of consistence and thickness, yet in point of fact these are no arguments against such a presumption; because you cannot raise any other dense enveloping layer from the whale's body but that same blubber; and the outermost enveloping layer of any animal, if reasonably dense, what can that be but the skin? True, from the unmarred dead body of the whale, you may scrape off with your hand an infinitely thin, transparent substance, somewhat resembling the thinnest shreds of isinglass, only it is almost as flexible and soft as satin; that is, previous to being dried, when it not only contracts and thickens, but becomes rather hard and brittle. I have several such dried bits, which I use for marks in my whale-books. It is transparent, as I said before; and being laid upon the printed page, I have sometimes pleased myself with fancying it exerted a magnifying influence. At any rate, it is pleasant to read about whales through their own spectacles, as you may say. But what I am driving at here is this. That same infinitely thin, isinglass substance, which, I admit, invests the entire body of the whale, is not so much to be regarded as the skin of the creature, as the skin of the skin, so to speak; for it were simply ridiculous to say, that the proper skin of the tremendous whale is thinner and more tender than the skin of a new-born child. But no more of this.</p>
-    </div>
-
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>In the first place, the enormous cutting tackles, among other ponderous things comprising a cluster of blocks generally painted green, and which no single man can possibly lift&mdash;this vast bunch of grapes was swayed up to the main-top and firmly lashed to the lower mast-head, the strongest point anywhere above a ship's deck. The end of the hawser-like rope winding through these intricacies, was then conducted to the windlass, and the huge lower block of the tackles was swung over the whale; to this block the great blubber hook, weighing some one hundred pounds, was attached. And now suspended in stages over the side, Starbuck and Stubb, the mates, armed with their long spades, began cutting a hole in the body for the insertion of the hook just above the nearest of the two side-fins. This done, a broad, semicircular line is cut round the hole, the hook is inserted, and the main body of the crew striking up a wild chorus, now commence heaving in one dense crowd at the windlass. When instantly, the entire ship careens over on her side; every bolt in her starts like the nail-heads of an old house in frosty weather; she trembles, quivers, and nods her frighted mast-heads to the sky. More and more she leans over to the whale, while every gasping heave of the windlass is answered by a helping heave from the billows; till at last, a swift, startling snap is heard; with a great swash the ship rolls upwards and backwards from the whale, and the triumphant tackle rises into sight dragging after it the disengaged semicircular end of the first strip of blubber.
-    </div>
-
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now as the blubber envelopes the whale precisely as the rind does an orange, so is it stripped off from the body precisely as an orange is sometimes stripped by spiralizing it. For the strain constantly kept up by the windlass continually keeps the whale rolling over and over in the water, and as the blubber in one strip uniformly peels off along the line called the "scarf," simultaneously cut by the spades of Starbuck and Stubb, the mates; and just as fast as it is thus peeled off, and indeed by that very act itself, it is all the time being hoisted higher and higher aloft till its upper end grazes the main-top; the men at the windlass then cease heaving, and for a moment or two the prodigious blood-dripping mass sways to and fro as if let down from the sky, and every one present must take good heed to dodge it when it swings, else it may box his ears and pitch him headlong overboard.</p>
-      <p>One of the attending harpooneers now advances with a long, keen weapon called a boarding-sword, and watching his chance he dexterously slices out a considerable hole in the lower part of the swaying mass. Into this hole, the end of the second alternating great tackle is then hooked so as to retain a hold upon the blubber, in order to prepare for what follows. Whereupon, this accomplished swordsman, warning all hands to stand off, once more makes a scientific dash at the mass, and with a few sidelong, desperate, lunging slicings, severs it completely in twain; so that while the short lower part is still fast, the long upper strip, called a blanket-piece, swings clear, and is all ready for lowering. The heavers forward now resume their song, and while the one tackle is peeling and hoisting a second strip from the whale, the other is slowly slackened away, and down goes the first strip through the main hatchway right beneath, into an unfurnished parlor called the blubber-room. Into this twilight apartment sundry nimble hands keep coiling away the long blanket-piece as if it were a great live mass of plaited serpents. And thus the work proceeds; the two tackles hoisting and lowering simultaneously; both whale and windlass heaving, the heavers singing, the blubber-room gentlemen coiling, the mates scarfing, the ship straining, and all hands swearing occasionally, by way of assuaging the general friction.</p>
-    </div>
-
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-right" />
-      <p>I have given no small attention to that not unvexed subject, the skin of the whale. I have had controversies about it with experienced whalemen afloat, and learned naturalists ashore. My original opinion remains unchanged; but it is only an opinion.</p>
-      <p>The question is, what and where is the skin of the whale? Already you know what his blubber is. That blubber is something of the consistence of firm, close-grained beef, but tougher, more elastic and compact, and ranges from eight or ten to twelve and fifteen inches in thickness.</p>
-    </div>
-
-    <div class="fadable">
-      <img src="http://www.fillmurray.com/g/250/175" alt="Bill Murray!" class="pull-left" />
-      <p>Now, however preposterous it may at first seem to talk of any creature's skin as being of that sort of consistence and thickness, yet in point of fact these are no arguments against such a presumption; because you cannot raise any other dense enveloping layer from the whale's body but that same blubber; and the outermost enveloping layer of any animal, if reasonably dense, what can that be but the skin? True, from the unmarred dead body of the whale, you may scrape off with your hand an infinitely thin, transparent substance, somewhat resembling the thinnest shreds of isinglass, only it is almost as flexible and soft as satin; that is, previous to being dried, when it not only contracts and thickens, but becomes rather hard and brittle. I have several such dried bits, which I use for marks in my whale-books. It is transparent, as I said before; and being laid upon the printed page, I have sometimes pleased myself with fancying it exerted a magnifying influence. At any rate, it is pleasant to read about whales through their own spectacles, as you may say. But what I am driving at here is this. That same infinitely thin, isinglass substance, which, I admit, invests the entire body of the whale, is not so much to be regarded as the skin of the creature, as the skin of the skin, so to speak; for it were simply ridiculous to say, that the proper skin of the tremendous whale is thinner and more tender than the skin of a new-born child. But no more of this.</p>
-    </div>
+    <section class="fadable">
+      <div>
+        <h1>Brought to You By</h1>
+        <p><a href="https://fromtheoutfit.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100" version="1.1" role="img">
+            <g id="Black-on-White" fill="#000000">
+              <!-- Square: Stroke -->
+              <path d="M18.8292481,2 L2,81.1707519 L81.1707519,98 L98,18.8282317 L18.8292481,2 M20.3945705,4.411003 L95.588997,20.3935541 L79.6054295,95.588997 L4.411003,79.6054295 L20.3945705,4.411003" id="Square-Stroke"></path>
+              <!-- All text -->
+              <g id="Text" transform="translate(32.000000, 31.000000)">
+                <!-- THE -->
+                <g transform="translate(1.000000, 0.000000)">
+                  <path d="M3.268,0.975 L3.268,8.94 L2.621,8.94 L2.621,0.975 L0.078,0.975 L0.078,0.398 L5.823,0.398 L5.823,0.975 L3.268,0.975"></path>
+                  <path d="M19.241,8.94 L19.241,4.922 L14.792,4.922 L14.792,8.94 L14.143,8.94 L14.143,0.398 L14.792,0.398 L14.792,4.346 L19.241,4.346 L19.241,0.398 L19.89,0.398 L19.89,8.94 L19.241,8.94"></path>
+                  <path d="M28.491,8.94 L28.491,0.398 L33.672,0.398 L33.672,0.975 L29.139,0.975 L29.139,4.346 L33.001,4.346 L33.001,4.922 L29.139,4.922 L29.139,8.363 L33.672,8.363 L33.672,8.94 L28.491,8.94"></path>
+                </g>
+                <!-- OUT -->
+                <g transform="translate(0.000000, 15.000000)">
+                  <path d="M6.134,8.074 C5.534,8.676 4.802,9.01 3.831,9.01 C2.859,9.01 2.115,8.676 1.516,8.074 C0.652,7.211 0.677,6.144 0.677,4.67 C0.677,3.193 0.652,2.127 1.516,1.264 C2.115,0.664 2.859,0.328 3.831,0.328 C4.802,0.328 5.534,0.664 6.134,1.264 C6.997,2.127 6.985,3.193 6.985,4.67 C6.985,6.144 6.997,7.211 6.134,8.074 L6.134,8.074 Z M4.898,2.269 C4.658,1.994 4.286,1.815 3.831,1.815 C3.375,1.815 2.991,1.994 2.751,2.269 C2.428,2.631 2.344,3.025 2.344,4.67 C2.344,6.313 2.428,6.707 2.751,7.068 C2.991,7.344 3.375,7.523 3.831,7.523 C4.286,7.523 4.658,7.344 4.898,7.068 C5.222,6.707 5.317,6.313 5.317,4.67 C5.317,3.025 5.222,2.631 4.898,2.269 L4.898,2.269 Z"></path>
+                  <path d="M17.897,9.01 C16.145,9.01 14.755,7.824 14.755,6.012 L14.755,0.398 L16.421,0.398 L16.421,5.953 C16.421,6.935 16.997,7.523 17.897,7.523 C18.796,7.523 19.384,6.935 19.384,5.953 L19.384,0.398 L21.04,0.398 L21.04,6.012 C21.04,7.824 19.647,9.01 17.897,9.01"></path>
+                  <path d="M32.797,1.887 L32.797,8.94 L31.13,8.94 L31.13,1.887 L28.898,1.887 L28.898,0.398 L35.027,0.398 L35.027,1.887 L32.797,1.887"></path>
+                </g>
+                <!-- FIT -->
+                <g transform="translate(0.000000, 30.000000)">
+                  <path d="M2.515,1.887 L2.515,3.986 L5.885,3.986 L5.885,5.473 L2.515,5.473 L2.515,8.94 L0.848,8.94 L0.848,0.398 L6.473,0.398 L6.473,1.887 L2.515,1.887"></path>
+                  <path d="M16.893,0.398 L18.561,0.398 L18.561,8.94 L16.893,8.94 L16.893,0.398 Z"></path>
+                  <path d="M32.626,1.887 L32.626,8.94 L30.959,8.94 L30.959,1.887 L28.728,1.887 L28.728,0.398 L34.856,0.398 L34.856,1.887 L32.626,1.887"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a></p>
+      </div>
+    </section>
 
     <script src="fadable.js"></script>
   </body>

@@ -1,45 +1,63 @@
-// Get the height of the browser viewport:
-var vpHeight = window.innerHeight;
-// Get the current scroll position, from the top:
-var scrollTop = document.documentElement.scrollTop;
-// Figure out where the bottom of the browser viewport is by adding the two
-// prior values:
-var vpBottom = vpHeight + scrollTop;
-// Set a distance from the bottom of the browser viewport at which we'll fade
-// in the fadable things:
-var distFromVpBottom = 200;
-// Select all of the fadable things:
-var fadables = document.querySelectorAll('.fadable');
+var fadable = {
 
-// Execute immediately:
-// ----------------------------------------------------------------------------
-// For each of the fadables:
-Array.prototype.forEach.call(fadables, function(el, i) {
-  // Find its top edge:
-  var elTop = el.getBoundingClientRect().top;
-  // If its top edge is farther down -- a greater number -- than the bottom of
-  // the browser viewport:
-  if (elTop > vpBottom) {
-    // Add a class of fadable--faded to it, which uses CSS to set its opacity
-    // to 0:
-    el.classList.add('fadable--faded');
+  fadeDistance: 200,
+  fadeClass   : 'fadable--invisible',
+  vpHeight    : null,
+  fadeLine    : null,
+  fadables    : null,
+  resizeTimer : null,
+
+  initialize: function() {
+    fadable.inspectEnvironment();
+    fadable.selectFadables();
+    fadable.prepareFadables();
+    fadable.bindEvents();
+  },
+
+  inspectEnvironment: function() {
+    fadable.vpHeight = window.innerHeight;
+    fadable.fadeLine = fadable.vpHeight - fadable.fadeDistance;
+  },
+
+  selectFadables: function() {
+    fadable.fadables = document.querySelectorAll('.fadable');
+  },
+
+  prepareFadables: function() {
+    Array.prototype.forEach.call(fadable.fadables, function(el, i) {
+      if (el.getBoundingClientRect().top > fadable.vpHeight) {
+        el.classList.add(fadable.fadeClass);
+      }
+    });
+  },
+
+  showInvisibles: function() {
+    Array.prototype.forEach.call(fadable.fadables, function(el, i) {
+      if (el.getBoundingClientRect().top < fadable.fadeLine) {
+        el.classList.remove(fadable.fadeClass);
+      }
+    });
+  },
+
+  bindEvents: function() {
+    document.addEventListener('scroll', function() {
+      fadable.showInvisibles();
+    });
+
+    window.addEventListener('resize', function() {
+      clearTimeout(fadable.resizeTimer);
+      fadable.resizeTimer = setTimeout(function() {
+        fadable.inspectEnvironment();
+        fadable.prepareFadables();
+        fadable.showInvisibles();
+      }, 250);
+    });
   }
-});
 
-// Execute on scroll:
-// ----------------------------------------------------------------------------
-document.addEventListener('scroll', function() {
-  // Select all of the things that are already faded:
-  var fadeds = document.querySelectorAll('.fadable--faded');
-  // For each one of them:
-  Array.prototype.forEach.call(fadeds, function(el, i) {
-    // Find its top edge:
-    var elTop = el.getBoundingClientRect().top;
-    // If its top edge is above -- a lesser number -- the bottom of the browser
-    // viewport, less the distance defined earlier:
-    if (elTop < (vpBottom - distFromVpBottom)) {
-      // Remove the fadable--faded class from it:
-      el.classList.remove('fadable--faded');
-    }
-  });
-});
+}
+
+document.onreadystatechange = function() {
+  if (document.readyState == 'complete') {
+    fadable.initialize();
+  }
+}
