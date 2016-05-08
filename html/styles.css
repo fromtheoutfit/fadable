@@ -21,7 +21,8 @@ section:nth-child(4n) {background-color:#FFEEAD;}
 section:nth-child(4n-2) {background-color:#FF6F69;}
 section:nth-child(4n-3) {background-color:#FFCC5C;}
 section div {max-width:42rem; text-align:center;}
-h1 {color:rgba(0,0,0,.325); font-size:250%; font-weight:900; margin:0; text-transform:uppercase;}
+h1 {color:rgba(0,0,0,.325); font-size:200%; font-weight:900; margin:0; text-transform:uppercase;}
+@media (min-width:600px) {h1 {font-size:250%;}}
 h1 em {color:#000;}
 p {color:rgba(0,0,0,.375); font-size:125%;}
 p:last-child {margin-bottom:0;}
