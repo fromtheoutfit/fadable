@@ -24,11 +24,13 @@ section div {max-width:42rem; text-align:center;}
 h1 {color:rgba(0,0,0,.325); font-size:200%; font-weight:900; margin:0; text-transform:uppercase;}
 @media (min-width:600px) {h1 {font-size:250%;}}
 h1 em {color:#000;}
-p {color:rgba(0,0,0,.375); font-size:125%;}
+p, ul, ol {color:rgba(0,0,0,.375); font-size:125%;}
 p:last-child {margin-bottom:0;}
+ul, ol {list-style-type:none; padding-left:0;}
 pre, code {background-color:rgba(255,255,255,.25); color:#000; padding:2px 4px;}
 pre code {background-color:transparent;}
 a {color:inherit;}
 .button {background-color:rgba(0,0,0,.5); border-radius:3px; color:rgba(255,255,255,.75); display:inline-block; font-size:85%; padding:0.75rem 1.25rem; text-decoration:none; text-transform:uppercase;}
 .button:hover, .button:focus {background-color:#000; color:#fff;}
 pre {text-align:left;}
+.link-to-outfit:hover path, .link-to-outfit:focus path {fill:rgba(0,0,0,.325);}
