@@ -1,6 +1,8 @@
 # Fadable
 Fade in elements as they move into view.
 
+![Fadable in action](https://thumbs.gfycat.com/SomberIllfatedDegus-size_restricted.gif)
+
 ## Demo
 http://fromtheoutfit.github.io/fadable/html/
 
