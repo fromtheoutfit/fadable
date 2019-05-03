@@ -1,22 +1,9 @@
-.fadable {
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 500ms;
-}
-
-.fadable.fadable--invisible {
-  opacity: 0;
-}
-
-
-
-
 /* ========================================================================= */
 /* Everything below is unimportant - used only by the demo and not necessary */
 /* to make Fadable work.                                                     */
 /* ========================================================================= */
 body {font-family:sans-serif;}
-section {align-items:center; background-color:#96CEB4; border-radius:3px; display:flex; min-height:33vh; justify-content:center; margin:1rem; padding:2rem;}
+section {align-items:center; background-color:#96CEB4; border-radius:3px; display:flex; min-height:33vh; justify-content:center; line-height:1.4; margin:1rem; padding:2rem;}
 section:nth-child(4n) {background-color:#FFEEAD;}
 section:nth-child(4n-2) {background-color:#FF6F69;}
 section:nth-child(4n-3) {background-color:#FFCC5C;}

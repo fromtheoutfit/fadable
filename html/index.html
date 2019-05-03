@@ -11,16 +11,16 @@
     <section class="fadable">
       <div>
         <h1>Fadable</h1>
-        <p>Fadable is a <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">bit of JavaScript</a> that finds elements with a class of <code>.fadable</code>, sets their opacity to <code>0</code> if they’re below the bottom of the browser window, then fades them in as they move into view.</p>
+        <p>Fadable is a <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">bit of JavaScript</a> that finds all elements with a class of <code>.fadable</code> and, if they’re outside of the browser's viewport, changes their opacity to <code>0</code> and their scale to <code>95%</code>. Then, when those elements are scrolled into view, Fadable <em>undoes</em> those changes via a transition.</p>
         <p><a href="https://github.com/fromtheoutfit/fadable" class="button">View on GitHub</a></p>
-        <p><small>Made by the folks at <a href="https://fromtheoutfit.com/">The Outfit</a>.</small></p>
+        <p><small>Made by the folks at <a href="https://theout.fit/">The Outfit</a>.</small></p>
       </div>
     </section>
 
     <section class="fadable">
       <div>
         <h1>This Box Probably Didn’t Fade In</h1>
-        <p>…and that’s OK! If the top edge of a Fadable element is above the bottom of the browser window on page-load, Fadable won’t hide it.</p>
+        <p>…and that’s OK because Fadable won’t change elements already in view.</p>
       </div>
     </section>
 
@@ -41,7 +41,7 @@
     <section class="fadable">
       <div>
         <h1>Implement Fadable</h1>
-        <p><em>…in a few steps:</em></p>
+        <p>…in <strong>only two</strong> steps:</p>
       </div>
     </section>
 
@@ -54,23 +54,7 @@
 
     <section class="fadable">
       <div>
-        <h1>Step #2: Use This CSS</h1>
-        <p>Copy and paste this into your CSS:</p>
-        <pre><code>.fadable {
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 500ms;
-}
-
-.fadable.fadable--invisible {
-  opacity: 0;
-}</code></pre>
-      </div>
-    </section>
-
-    <section class="fadable">
-      <div>
-        <h1>Step #3: Import The JavaScript</h1>
+        <h1>Step #2: Import The JavaScript</h1>
         <p>Get the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and import it at the bottom of your web page(s):</p>
         <p><code>&lt;script src="/path/to/fadable.js"&gt;&lt;/script&gt;</code>
       </div>
@@ -79,31 +63,32 @@
     <section class="fadable">
       <div>
         <h1>That’s It</h1>
-        <p>Check out the source of this page to see how we’re doing it.</p>
+        <p>Check out the source of this page as an example.</p>
       </div>
     </section>
 
     <section class="fadable">
       <div>
-        <h1>Options / Adjustments</h1>
-        <p><strong>Fade in Point:</strong> to change the point at which Fadable elements start to fade in after they pass the browser’s bottom edge, open <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js#L3">fadable.js</a> and adjust the value assigned to <code>fadeDistance</code>. The default is <code>200</code> pixels.</p>
-        <p><strong>Fade in Speed:</strong> to change the speed at which Fadable elements fade in, find the <code>transition-duration</code> property in the <code>.fadable</code> <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/styles.css#L4">CSS</a> and adjust it as you see fit. The default is <code>500ms</code> (milliseconds).</p>
+        <h1>Configuration</h1>
+        <p>There are a number of details you can configure to suit your needs; open the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and look for the commented lines that explain what happens and when it happens.</p>
       </div>
     </section>
 
     <section class="fadable">
       <div>
-        <h1>Browser Support</h1>
+        <h1><a href="https://caniuse.com/#feat=intersectionobserver">Browser Support</a></h1>
         <ul>
-          <li>Internet Explorer 10+</li>
-          <li>Edge 12+</li>
-          <li>Firefox 6+</li>
-          <li>Chrome 15+</li>
-          <li>Safari 5.1+</li>
-          <li>Opera 11.6+</li>
-          <li>iOS Safari 5.1+</li>
-          <li>Android Browser 4+</li>
-          <li>IE Mobile 11+</li>
+          <li>Edge 16+</li>
+          <li>Firefox 55+</li>
+          <li>Chrome 58+</li>
+          <li>Safari 12.1+</li>
+          <li>Opera 45+</li>
+          <li>iOS Safari 12.2+</li>
+          <li>Android Browser 67+</li>
+          <li>Opera Mobile 46+</li>
+          <li>Chrome for Android 74+</li>
+          <li>Firefox for Android 66+</li>
+          <li>Samsung Internet 9.2+</li>
         </ul>
       </div>
     </section>
@@ -119,7 +104,7 @@
     <section class="fadable">
       <div>
         <h1>Brought to You By</h1>
-        <p><a href="https://fromtheoutfit.com/" class="link-to-outfit"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M18.83 2L2 81.17 81.17 98 98 18.828 18.83 2m1.565 2.41L95.59 20.395 79.604 95.59 4.41 79.604 20.396 4.41"/><path d="M36.268 31.975v7.965h-.647v-7.965H33.08v-.577h5.745v.577h-2.555M52.24 39.94v-4.018h-4.448v4.018h-.65v-8.542h.65v3.948h4.45v-3.948h.648v8.542h-.65M61.49 39.94v-8.542h5.182v.577H62.14v3.37H66v.577h-3.86v3.44h4.532v.578h-5.18"/><g><path d="M38.134 54.074c-.6.602-1.332.936-2.303.936-.97 0-1.715-.334-2.314-.936-.864-.863-.84-1.93-.84-3.404 0-1.477-.024-2.543.84-3.406.6-.6 1.343-.936 2.315-.936s1.704.336 2.304.936c.863.863.85 1.93.85 3.406 0 1.474.013 2.54-.85 3.404zm-1.236-5.805c-.24-.276-.612-.455-1.067-.455-.455 0-.84.18-1.08.454-.322.36-.406.755-.406 2.4 0 1.643.084 2.037.407 2.398.24.276.625.455 1.08.455.456 0 .828-.18 1.068-.455.324-.36.42-.755.42-2.398 0-1.645-.096-2.04-.42-2.4zM49.897 55.01c-1.752 0-3.142-1.186-3.142-2.998v-5.614h1.666v5.555c0 .982.577 1.57 1.477 1.57.9 0 1.487-.588 1.487-1.57v-5.555h1.656v5.614c0 1.812-1.393 2.998-3.143 2.998M64.797 47.887v7.053H63.13v-7.053h-2.232v-1.49h6.13v1.49h-2.23"/></g><g><path d="M34.515 62.887v2.1h3.37v1.486h-3.37v3.467h-1.667v-8.542h5.625v1.49h-3.958M48.893 61.398h1.668v8.542h-1.667v-8.542zM64.626 62.887v7.053H62.96v-7.053h-2.232v-1.49h6.128v1.49h-2.23"/></g></svg></a></p>
+        <p><a href="https://theout.fit/" class="link-to-outfit"><svg width="212" height="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M25.588 19.35c1.912-1.106 2.616-3.722 1.51-5.633-1.107-1.912-3.723-2.616-5.635-1.51-1.911 1.108-2.615 3.723-1.509 5.635 1.107 1.911 3.622 2.716 5.634 1.509M18.948 8.083c1.912-1.106 2.616-3.722 1.51-5.634C19.35.538 16.734-.166 14.823.94c-1.912 1.107-2.616 3.723-1.51 5.634 1.107 2.012 3.622 2.616 5.634 1.51M32.127 30.618c1.912-1.106 2.616-3.722 1.51-5.633-1.107-1.912-3.723-2.616-5.634-1.51-1.912 1.107-2.616 3.723-1.51 5.634 1.107 2.012 3.622 2.616 5.634 1.51" fill="#EA2627"/><path d="M31.926 8.083c1.912-1.106 2.616-3.722 1.51-5.634C32.328.538 29.712-.166 27.8.94c-1.911 1.107-2.615 3.723-1.509 5.634 1.107 1.912 3.622 2.616 5.634 1.51M38.465 19.35c1.912-1.106 2.616-3.722 1.51-5.633-1.107-1.912-3.723-2.616-5.634-1.51-1.912 1.108-2.616 3.723-1.51 5.635 1.208 2.012 3.723 2.615 5.634 1.509" fill="#F79821"/><path d="M40.679.94c-1.912 1.107-2.616 3.723-1.51 5.634 1.107 1.912 3.723 2.616 5.634 1.51 1.912-1.107 2.616-3.723 1.51-5.635A4.018 4.018 0 0 0 40.679.94" fill="#FFCC07"/><path d="M15.025 23.576c-1.912 1.107-2.616 3.722-1.51 5.634 1.107 1.911 3.723 2.616 5.635 1.509 1.911-1.107 2.615-3.722 1.509-5.634-1.208-2.012-3.723-2.716-5.634-1.509M8.385 12.208c-1.911 1.107-2.616 3.722-1.51 5.634 1.108 1.911 3.723 2.615 5.635 1.509 1.911-1.107 2.615-3.723 1.509-5.634-1.107-1.912-3.622-2.616-5.634-1.51" fill="#B82025"/><path d="M7.68 24.985c-1.106-1.912-3.722-2.616-5.633-1.51C.135 24.583-.57 27.199.537 29.11c1.108 1.912 3.723 2.616 5.635 1.51 2.012-1.107 2.615-3.622 1.509-5.634" fill="#0B0204"/><g fill="#0B0204"><path d="M77.902 22.168c1.51-1.61 2.213-3.723 2.213-6.439s-.704-4.829-2.213-6.439c-1.509-1.61-3.42-2.414-5.936-2.414-2.414 0-4.426.805-5.835 2.414-1.509 1.61-2.213 3.723-2.213 6.439s.704 4.829 2.213 6.439c1.51 1.61 3.421 2.414 5.835 2.414 2.516 0 4.528-.805 5.936-2.414M60.9 26.997c-3.018-2.918-4.527-6.74-4.527-11.268 0-4.527 1.509-8.25 4.527-11.268C63.918 1.544 67.64.035 72.067.035s8.149 1.509 11.066 4.426c3.019 2.918 4.528 6.74 4.528 11.268 0 4.527-1.51 8.25-4.528 11.268-3.018 2.917-6.74 4.426-11.066 4.426-4.426 0-8.149-1.408-11.167-4.426" fill-rule="nonzero"/><path d="M92.389 18.647V.337h7.445v18.31c0 1.81.402 3.219 1.308 4.225.905 1.006 2.213 1.509 3.923 1.509s3.119-.503 4.024-1.51c.906-1.005 1.409-2.414 1.409-4.224V.337h7.444v18.31c0 2.716-.603 5.03-1.911 7.042-1.308 1.911-2.817 3.42-4.83 4.326-1.91.905-4.023 1.308-6.337 1.308-3.521 0-6.54-1.107-8.954-3.32-2.314-2.314-3.521-5.433-3.521-9.356M122.268 6.172V.538h24.145v5.634h-8.35v24.95h-7.445V6.171zM150.84 31.121V.538h19.92v5.634h-12.476v6.539h9.357v5.734h-9.357v12.676zM175.89.538h7.445v30.584h-7.445zM187.761 6.172V.538h24.145v5.634h-8.35v24.95h-7.445V6.171z"/></g></g></svg></a></p>
       </div>
     </section>
 
