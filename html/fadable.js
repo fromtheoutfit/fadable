@@ -1,4 +1,4 @@
-if ('IntersectionObserver' in window) {
+if (window.matchMedia('screen').matches && 'IntersectionObserver' in window) {
   let observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(el) {
       if (el.intersectionRatio > 0) {
