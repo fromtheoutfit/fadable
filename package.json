@@ -1,6 +1,6 @@
 {
   "name": "@theoutfit/fadable",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Fade in elements as they move into view, at both the bottom and top of the viewport.",
   "main": "dist/fadable.min.js",
   "scripts": {
@@ -13,8 +13,8 @@
     "url": "git+https://github.com/fromtheoutfit/fadable.git"
   },
   "keywords": ["fade-in", "fade-out", "fade", "fades"],
-  "author": "",
-  "license": "ISC",
+  "author": "The Outfit, Inc.",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fromtheoutfit/fadable/issues"
   },
@@ -22,5 +22,8 @@
   "devDependencies": {
     "rollup": "^2.26.4",
     "rollup-plugin-terser": "^7.0.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
