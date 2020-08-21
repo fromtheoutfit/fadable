@@ -14,7 +14,7 @@ Property | Type | Default | Description
 -------- | ---- | ------- | -----------
 `initialScale` | number | 0.95 | Initial scale (from 0 - 1)
 `transitionDuration` | number | 0.75 | Transition speed (in seconds)
-`edgeDistance` | number | 40 | Distance from viewport edges, when transition runs (in pixels)
+`edgeDistance` | number | 40 | Transition runs at this distance from viewport edges (in pixels)
 
 ## License
 Fadable is available under the [MIT license](https://github.com/fromtheoutfit/fadable/blob/master/LICENSE).
