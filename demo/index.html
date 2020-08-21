@@ -12,93 +12,57 @@
       <section class="fadable">
         <div>
           <h1>Fadable</h1>
-          <p>Fadable is a <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">bit of JavaScript</a> that finds all elements with a class of <code>.fadable</code> and, if they’re outside of the browser's viewport, changes their opacity to <code>0</code> and their scale to <code>95%</code>. Then, when those elements are scrolled into view, Fadable <em>undoes</em> those changes via a transition.</p>
-          <p><a href="https://github.com/fromtheoutfit/fadable" class="button">View on GitHub</a></p>
-          <p><small>Made by the folks at <a href="https://theout.fit/">The Outfit</a>.</small></p>
+          <p>Fadable is a little bit of JavaScript (753 bytes) that finds any element with a class of <code>.fadable</code> and, if it’s outside of the browser's viewport, changes its opacity to <code>0</code> and its scale to <code>95%</code>. Then, when that element is scrolled into view, Fadable <em>undoes</em> those changes via configurable CSS transitions. <strong>Scroll to see how it works…</strong></p>
+          <p><a href="https://github.com/fromtheoutfit/fadable" class="button">Fadable on GitHub</a></p>
         </div>
       </section>
 
       <section class="fadable">
         <div>
-          <h1>This Box Probably Didn’t Fade In</h1>
-          <p>…and that’s OK because Fadable won’t change elements already in view.</p>
+          <h1>For example: this box Probably didn’t fade in</h1>
+          <p>That’s OK because Fadable doesn’t change elements that are already in view when the page loads. <strong>Keep scrolling…</strong></p>
         </div>
       </section>
 
       <section class="fadable">
         <div>
-          <h1>This Box Might Have Faded In</h1>
+          <h1>This box <em>might</em> have faded in</h1>
           <p>It really depends on how tall your browser is at the moment.</p>
         </div>
       </section>
 
       <section class="fadable">
         <div>
-          <h1>This Box Probably Faded In</h1>
+          <h1>This box <em>probably</em> faded in</h1>
           <p>You get the gist.</p>
+          <p><strong>Oh, you know what?</strong> Scroll back up — Fadable works in both directions.</p>
         </div>
       </section>
 
       <section class="fadable">
         <div>
-          <h1>Implement Fadable</h1>
-          <p>…in <strong>only two</strong> steps:</p>
-        </div>
-      </section>
-
-      <section class="fadable">
-        <div>
-          <h1>Step #1: Add a Class</h1>
-          <p>Add a class of <code>.fadable</code> to any element that should fade in.</p>
-        </div>
-      </section>
-
-      <section class="fadable">
-        <div>
-          <h1>Step #2: Import The JavaScript</h1>
-          <p>Get the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and import it at the bottom of your web page(s):</p>
-          <p><code>&lt;script src="/path/to/fadable.js"&gt;&lt;/script&gt;</code>
-        </div>
-      </section>
-
-      <section class="fadable">
-        <div>
-          <h1>That’s It</h1>
-          <p>Check out the source of this page as an example.</p>
-        </div>
-      </section>
-
-      <section class="fadable">
-        <div>
-          <h1>Configuration</h1>
-          <p>There are a number of details you can configure to suit your needs; open the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and look for the commented lines that explain what happens and when it happens.</p>
-        </div>
-      </section>
-
-      <section class="fadable">
-        <div>
-          <h1><a href="https://caniuse.com/#feat=intersectionobserver">Browser Support</a></h1>
-          <ul>
-            <li>Edge 16+</li>
-            <li>Firefox 55+</li>
-            <li>Chrome 58+</li>
-            <li>Safari 12.1+</li>
-            <li>Opera 45+</li>
-            <li>iOS Safari 12.2+</li>
-            <li>Android Browser 67+</li>
-            <li>Opera Mobile 46+</li>
-            <li>Chrome for Android 74+</li>
-            <li>Firefox for Android 66+</li>
-            <li>Samsung Internet 9.2+</li>
-          </ul>
+          <h1>Add Fadable to your project</h1>
+          <ol>
+            <li>Install it: <kbd>npm i @theoutfit/fadable --save</kbd></li>
+            <li>Call it: <code>fadable()</code></li>
+            <li>Class it: add a class of <code>fadable</code> to any element</li>
+          </ol>
+          <p>If the default configuration is not to your taste, you can change it:
+          <pre><code>fadable({
+  initialScale = 0.50,       // Initial scale, from 0 - 1
+  transitionDuration = 1.5,  // Transition speed, in seconds
+  edgeDistance = 80          // Distance from viewport edges, in pixels
+})</code></pre>
+          </p>
+          <p><a href="https://github.com/fromtheoutfit/fadable/#readme" class="button">Learn more</a></p>
         </div>
       </section>
 
       <section class="fadable">
         <div>
           <h1>Questions / Issues / Improvements</h1>
-          <p>If you have any questions, if you’ve discovered an issue, or if you can think of any improvements, please use the Fadable GitHub repo to get involved:</p>
-          <p><a href="https://github.com/fromtheoutfit/fadable" class="button">Fadable on GitHub</a></p>
+          <p>If you have any questions, if you’ve discovered an issue, or if you can think of any improvements, please let us know:</p>
+          <p><a href="https://github.com/fromtheoutfit/fadable/issues" class="button">Fadable Issues</a></p>
         </div>
       </section>
 
@@ -111,6 +75,8 @@
 
     </main>
     <script src="fadable.min.js"></script>
-    <script>fadable()</script>
+    <script>
+        fadable()
+    </script>
   </body>
 </html>
