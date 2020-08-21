@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/fromtheoutfit/fadable.git"
   },
-  "keywords": [],
+  "keywords": ["fade-in", "fade-out", "fade", "fades"],
   "author": "",
   "license": "ISC",
   "bugs": {
