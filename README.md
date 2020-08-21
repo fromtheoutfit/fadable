@@ -1,25 +1,20 @@
 # Fadable
-Fade in elements as they move into view.
+Fade in elements as they move into view, at both the bottom and top of the viewport.
 
 ## Demo
-http://fromtheoutfit.github.io/fadable/html/
+https://theoutfit-fadable.netlify.app/
 
 ## How to Implement
-1. Add a class of `.fadable` to any element that should fade in.
-2. Import [the Fadable JavaScript](https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js) at the bottom of your web page(s), like so: `<script src="/path/to/fadable.js"></script>`.
+1. Install it: `npm i @theoutfit/fadable --save`
+2. Call it: `fadable()`
+3. Class it: add a class of `fadable` to any element
 
-## Options / Adjustments
-There are a number of details you can configure to suit your needs; open the <a href="https://github.com/fromtheoutfit/fadable/blob/master/html/fadable.js">Fadable JavaScript</a> and look for the commented lines that explain what happens and when it happens.
+## Configuration
+Property | Type | Default | Description
+-------- | ---- | ------- | -----------
+`initialScale` | number | 0.95 | Initial scale (from 0 - 1)
+`transitionDuration` | number | 0.75 | Transition speed (in seconds)
+`edgeDistance` | number | 40 | Distance from viewport edges, when transition runs (in pixels)
 
-## Browser Support
-* Edge 16+
-* Firefox 55+
-* Chrome 58+
-* Safari 12.1+
-* Opera 45+
-* iOS Safari 12.2+
-* Android Browser 67+
-* Opera Mobile 46+
-* Chrome for Android 74+
-* Firefox for Android 66+
-* Samsung Internet 9.2+
+## License
+Fadable is available under the [MIT license](https://github.com/fromtheoutfit/fadable/blob/master/LICENSE).
