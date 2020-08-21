@@ -22,5 +22,8 @@
   "devDependencies": {
     "rollup": "^2.26.4",
     "rollup-plugin-terser": "^7.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
