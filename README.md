@@ -16,5 +16,14 @@ Property | Type | Default | Description
 `transitionDuration` | number | 0.75 | Transition speed (in seconds)
 `edgeDistance` | number | 40 | Transition runs at this distance from viewport edges (in pixels)
 
+For example:
+```js
+fadable({
+  initialScale = 0.50,
+  transitionDuration = 1.5,
+  edgeDistance = 80
+})
+```
+
 ## License
 Fadable is available under the [MIT license](https://github.com/fromtheoutfit/fadable/blob/master/LICENSE).
