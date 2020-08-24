@@ -1,6 +1,6 @@
 {
   "name": "@theoutfit/fadable",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Fade in elements as they move into view, at both the bottom and top of the viewport.",
   "main": "dist/fadable.min.js",
   "scripts": {

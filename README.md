@@ -19,9 +19,9 @@ Property | Type | Default | Description
 For example:
 ```js
 fadable({
-  initialScale = 0.50,
-  transitionDuration = 1.5,
-  edgeDistance = 80
+  initialScale: 0.50,
+  transitionDuration: 1.5,
+  edgeDistance: 80
 })
 ```
 
