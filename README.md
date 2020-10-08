@@ -6,8 +6,9 @@ https://theoutfit-fadable.netlify.app/
 
 ## How to Implement
 1. Install it: `npm i @theoutfit/fadable --save`
-2. Call it: `fadable()`
-3. Class it: add a class of `fadable` to any element
+2. Import it: <code>import fadable from '@theoutfit/fadable'</code>
+3. Call it: `fadable()`
+4. Class it: add a class of `fadable` to any element
 
 ## Configuration
 Property | Type | Default | Description
